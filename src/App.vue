@@ -1,14 +1,24 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
-    <router-view/>
+    <router-view/> -->
+    <workspace />
   </div>
 </template>
-
+<script>
+import workspace from '@/components/workspace';
+export default {
+  components: { workspace }
+}
+</script>
 <style lang="less">
+html, body, #app {
+  width: 100%;
+  height: 100%;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
